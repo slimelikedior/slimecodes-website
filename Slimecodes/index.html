@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slimecodes</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/icon" sizes="32x32" href="images/favicon.ico">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+<!-- Logo and Site Title -->
+<div class="site-branding">
+    <img src="images/Slime-logo.svg" alt="Slimecodes Logo" class="site-logo" width="120" height="32">
+    <h1 class="site-title">Slimecodes</h1>
+</div>
+
+        <button class="menu-toggle" id="mobileMenuToggle" aria-label="Open navigation menu">&#9776;</button>
+        <nav id="mainNav">
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#services">Services</a>
+<!-- Dark Mode Toggle Button -->
+<button id="darkToggle" class="dark-toggle-btn">
+    <img src="images/moon.svg" alt="Toggle Dark Mode" id="darkIcon" />
+</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero swiper fade-in" id="home">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide hero-slide" style="background-image:url('images/slider1.jpg');">
+                <div class="hero-content">
+                    <h1 class="heading-font">We Design Websites That Work</h1>
+                    <p>Modern, responsive, and user-friendly websites tailored to your brand.</p>
+                    <a href="#booking" class="btn">Book Appointment</a>
+                </div>
+            </div>
+            <div class="swiper-slide hero-slide" style="background-image:url('images/slider2.jpg');">
+                <div class="hero-content">
+                    <h1 class="heading-font">Your Business, Online?</h1>
+                    <p>We bring your business online with a beautiful web presence.</p>
+                    <a href="#portfolio" class="btn">View Portfolio</a>
+                </div>
+            </div>
+            <div class="swiper-slide hero-slide" style="background-image:url('images/slider3.jpg');">
+                <div class="hero-content">
+                    <h1 class="heading-font">Creative & Functional</h1>
+                    <p>Designs that blend creativity with functionality.</p>
+                    <a href="#services" class="btn">Our Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="reveal fade-in">
+        <div class="container">
+            <h2 class="heading-font">About Us</h2>
+            <p>At Slimecodes, we specialize in crafting all kinds of websites — from sleek business portfolios and dynamic e-commerce platforms to custom blogs and booking systems. Whether you're a startup, brand, or entrepreneur, we bring your vision to life with modern, responsive, and user-friendly design.</p>
+            <p>We believe in quality without breaking the bank — that’s why we offer premium web development services at affordable rates, ensuring every project is polished, professional, and tailored just for you.</p>
+            <p>✨ Whether you need a simple landing page or a complex web app, we’ve got the skills and creativity to make it happen — fast, clean, and effective.</p>
+            <p><strong>If it’s not smooth, then it’s not Slime.</strong></p>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="reveal fade-in">
+        <div class="container">
+            <h2 class="heading-font" style="text-align:center;">Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="https://imgs.search.brave.com/RWTr9MDevVURHcRHo3ErdPqZk3rr-NA39ga2HW5EDJ8/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/ZHJpYmJibGUuY29t/L3VzZXJ1cGxvYWQv/MjM3NDQ5NzIvZmls/ZS9vcmlnaW5hbC1m/MDlhZDQ0OTFjZjMw/YzE2MjhlNjgwODNh/ZDdkMTJhZC5qcGc_/Zm9ybWF0PXdlYnAm/cmVzaXplPTQwMHgz/MDAmdmVydGljYWw9/Y2VudGVy" alt="E-commerce Website" />
+                    <h3>E-commerce Website</h3>
+                    <p>Fully responsive online store with integrated payment gateway.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://imgs.search.brave.com/Bpy0ngZJ5MXyMtXAaOe9WvKQ2bJ_h1hZ6EYGvUcT4Bs/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9kdWNr/LmRlc2lnbi93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyNC8wOS9U/b3AtQ29ycG9yYXRl/LVdlYnNpdGUtRGVz/aWduLUFnZW5jaWVz/LXNjYWxlZC5qcGc" alt="Corporate Website" />
+                    <h3>Corporate Website</h3>
+                    <p>Clean and professional design for a corporate business.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://imgs.search.brave.com/gjN2XxUoV_MkkfM3aKdEbSv06cU-P3iGiplBdnmjGes/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/cHJvZC53ZWJzaXRl/LWZpbGVzLmNvbS82/MmM1ODM2MDc2ODM5/YWQ5NWUzNjIxNWQv/NjRmYjJiNjQzMTY4/NjJkZjNkMmUwOTlh/X3JjUVlvc1RVYVE2/aGlKU0FrN0pwaEJY/SkNjWnBQU0FucTZ1/OFVfM3BuajBVVmNI/TTVuaUdkR05CWjYy/NWJuWm1SRFRnNFVR/Rk9qZDh0dWN6SWZO/U1o3SlFlUkJ0blk0/Tkh2R3lHalJCZV9E/VkU0UWlEc1Z5OXZj/bGxSVDdCMVV0N3d4/OUNCRHI5NDVGMjZV/bTFoRjR4TTQucG5n" alt="Personal Portfolio" />
+                    <h3>Personal Portfolio</h3>
+                    <p>Showcasing creative work for freelancers and designers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+<section id="services" style="
+  position: relative;
+  background-image: url('images/bgjpg.jpg'); /* update this path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 20px;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+">
+  <!-- Dark overlay -->
+  <div style="
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+  "></div>
+
+  <!-- Content -->
+  <div style="
+    position: relative;
+    z-index: 2;
+    max-width: 1000px;
+    margin: 0 auto;
+    animation: fadeIn 1.2s ease-out;
+  ">
+    <h2 style="font-size: 2.5rem; margin-bottom: 10px;">Our Services</h2>
+    <p style="font-size: 1.1rem; margin-bottom: 40px;">
+      We build all kinds of beautiful, high-performing websites at affordable rates.
+    </p>
+
+    <!-- Service Cards -->
+    <div style="
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 0 10px;
+    ">
+
+      <!-- Each Service Card -->
+      <div style="
+        background: rgba(255,255,255,0.1);
+        padding: 20px;
+        border-radius: 10px;
+        transition: transform 0.3s ease, background 0.3s ease;
+        cursor: pointer;
+        text-align: center;
+      " onmouseover="this.style.transform='scale(1.05)'; this.style.background='rgba(255,255,255,0.2)';" 
+         onmouseout="this.style.transform='scale(1)'; this.style.background='rgba(255,255,255,0.1)';">
+        <div style="margin-bottom: 15px;">
+          <!-- Device Icon -->
+          <svg width="40" height="40" fill="white" viewBox="0 0 24 24">
+            <path d="M4 6h16v12H4z" opacity=".3"/>
+            <path d="M2 4v16h20V4H2zm18 12H4V6h16v10z"/>
+          </svg>
+        </div>
+        <h3>Responsive Design</h3>
+        <p>Websites that adapt seamlessly to all devices and screen sizes.</p>
+      </div>
+
+      <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; transition: transform 0.3s ease, background 0.3s ease; cursor: pointer; text-align: center;"
+           onmouseover="this.style.transform='scale(1.05)'; this.style.background='rgba(255,255,255,0.2)';" 
+           onmouseout="this.style.transform='scale(1)'; this.style.background='rgba(255,255,255,0.1)';">
+        <div style="margin-bottom: 15px;">
+          <!-- Pen Tool Icon -->
+          <svg width="40" height="40" fill="white" viewBox="0 0 24 24">
+            <path d="M14.06 9.02l.92.92L6.92 18H6v-.92z" opacity=".3"/>
+            <path d="M3 17.25V21h3.75l11.06-11.06-3.75-3.75L3 17.25zM14.06 9.02l.92.92L6.92 18H6v-.92zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 0 0-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+          </svg>
+        </div>
+        <h3>UI/UX Design</h3>
+        <p>Engaging interfaces and intuitive user experiences.</p>
+      </div>
+
+      <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; transition: transform 0.3s ease, background 0.3s ease; cursor: pointer; text-align: center;"
+           onmouseover="this.style.transform='scale(1.05)'; this.style.background='rgba(255,255,255,0.2)';" 
+           onmouseout="this.style.transform='scale(1)'; this.style.background='rgba(255,255,255,0.1)';">
+        <div style="margin-bottom: 15px;">
+          <!-- Lightning Bolt Icon -->
+          <svg width="40" height="40" fill="white" viewBox="0 0 24 24">
+            <path d="M7 2v11h3v9l7-12h-4l4-8z"/>
+          </svg>
+        </div>
+        <h3>Landing Pages</h3>
+        <p>High-conversion product and service pages that sell fast.</p>
+      </div>
+
+      <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; transition: transform 0.3s ease, background 0.3s ease; cursor: pointer; text-align: center;"
+           onmouseover="this.style.transform='scale(1.05)'; this.style.background='rgba(255,255,255,0.2)';" 
+           onmouseout="this.style.transform='scale(1)'; this.style.background='rgba(255,255,255,0.1)';">
+        <div style="margin-bottom: 15px;">
+          <!-- Portfolio Icon -->
+          <svg width="40" height="40" fill="white" viewBox="0 0 24 24">
+            <path d="M10 2h4v2h-4zM4 6h16v12H4z" opacity=".3"/>
+            <path d="M20 4h-4V2h-8v2H4c-1.1 0-2 .9-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6c0-1.1-.9-2-2-2zm0 14H4V6h16v12z"/>
+          </svg>
+        </div>
+        <h3>Portfolio Sites</h3>
+        <p>Display your personal or business portfolio with elegance.</p>
+      </div>
+
+      <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; transition: transform 0.3s ease, background 0.3s ease; cursor: pointer; text-align: center;"
+           onmouseover="this.style.transform='scale(1.05)'; this.style.background='rgba(255,255,255,0.2)';" 
+           onmouseout="this.style.transform='scale(1)'; this.style.background='rgba(255,255,255,0.1)';">
+        <div style="margin-bottom: 15px;">
+          <!-- Animation Icon -->
+          <svg width="40" height="40" fill="white" viewBox="0 0 24 24">
+            <path d="M2 12L22 2v20L2 12z"/>
+          </svg>
+        </div>
+        <h3>Web Animations</h3>
+        <p>Smooth transitions, scroll effects, and animated interactions.</p>
+      </div>
+      <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; transition: transform 0.3s ease, background 0.3s ease; cursor: pointer; text-align: center;"
+           onmouseover="this.style.transform='scale(1.05)'; this.style.background='rgba(255,255,255,0.2)';" 
+           onmouseout="this.style.transform='scale(1)'; this.style.background='rgba(255,255,255,0.1)';">
+        <div style="margin-bottom: 15px;">
+          <!-- Animation Icon -->
+          <svg width="40" height="40" fill="white" viewBox="0 0 24 24">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm1.07-7.75c-.9.92-1.07 1.25-1.07 2.25h-2v-.5c0-1.1.36-1.99 1.07-2.7.82-.83 1.43-1.39 1.43-2.3 0-1.1-.9-2-2-2s-2 .9-2 2H7c0-2.21 1.79-4 4-4s4 1.79 4 4c0 1.45-.83 2.18-1.93 3.25z"/>
+          </svg>
+        </div>
+        <p>Want to find out more? why not book an appointment with us below </p>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- Inline keyframes -->
+<style>
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+</style>
+
+
+    <!-- Booking -->
+    <section id="booking" class="reveal fade-in">
+        <div class="container">
+            <h2 class="heading-font">Book an Appointment</h2>
+            <p>Schedule a consultation with us today!</p>
+            <iframe src="https://calendly.com/godwingrandeur" width="100%" height="500" frameborder="0" title="Booking"></iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-col footer-connect">
+                <h4>Follow our Socials</h4>
+                <div class="social-links">
+                    <a href="#" aria-label="X"><img src="images/icon-x.svg" alt="X" width="24" height="24"></a>
+                    <a href="#" aria-label="LinkedIn"><img src="images/icon-linkedin.svg" alt="LinkedIn" width="24" height="24"></a>
+                    <a href="#" aria-label="Facebook"><img src="images/icon-facebook.svg" alt="Facebook" width="24" height="24"></a>
+                    <a href="#" aria-label="Instagram"><img src="images/icon-instagram.svg" alt="Instagram" width="24" height="24"></a>
+                    <a href="#" aria-label="YouTube"><img src="images/icon-youtube.svg" alt="YouTube" width="24" height="24"></a>
+                    <a href="#" aria-label="Tiktok"><img src="images/icon-tiktok.svg" alt="Tiktok" width="24" height="24"></a>
+                </div>
+        <p class="heading-font">&copy; 2025 Slimecodes. All Rights Reserved.</p>
+    </footer>
+     <a href="#booking" class="sticky-btn">Book Now</a>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
